@@ -1,0 +1,23 @@
+name: midi-gen-pipeline
+
+on: 
+  push:
+    branches: 
+      - 'feature/*'
+      - 'hotfix/*'
+      - 'refactoring/*'
+    paths:
+      - '**.py'
+
+jobs:
+  build:
+    name: echo test
+    runs-on: [self-hosted, linux]
+    steps:
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        echo $BRNACH triggered me
+      env:
+         BRANCH: ${{github.ref}}  
