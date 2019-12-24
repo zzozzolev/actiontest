@@ -18,4 +18,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        echo ${GITHUB_REF} triggered me
+    - name: Dump GitHub context
+      env:
+         GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
