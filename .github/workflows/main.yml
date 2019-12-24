@@ -20,4 +20,4 @@ jobs:
         echo test, and deploy your project.
         echo $BRNACH triggered me
       env:
-         BRANCH: ${{github.ref}}  
+         BRANCH: ${{ github.ref }}  
