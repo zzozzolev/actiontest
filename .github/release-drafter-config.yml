@@ -2,13 +2,11 @@ name-template: 'v$NEXT_MINOR_VERSION'
 tag-template: 'v$NEXT_MINOR_VERSION'
 categories:
   - title: '🚀 Features'
-    labels:
-      - 'feature'
-      - 'refactoring'
+    label: 'enhancement'
   - title: '🐛 Hotfixes'
-    label: 'hotfix'
+    label: 'bug'
   - title: 'ETC'
-    label: 'doc'
+    label: 'documentation'
 change-template: '- $TITLE #$NUMBER @$AUTHOR '
 template: |
   ## Changes
