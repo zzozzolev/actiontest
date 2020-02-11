@@ -9,6 +9,6 @@ categories:
     label: 'documentation'
 change-template: '- $TITLE #$NUMBER @$AUTHOR '
 template: |
-  ## Changes
+  ## Uncategorized
 
   $CHANGES
