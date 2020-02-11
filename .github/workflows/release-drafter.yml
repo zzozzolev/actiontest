@@ -1,10 +1,10 @@
 name: Release Drafter
 
-on:
-  push:
-    # branches to consider in the event; optional, defaults to all
-    branches:
-      - master
+on: push
+  # push:
+  #   # branches to consider in the event; optional, defaults to all
+  #   branches:
+  #     - master
 
 jobs:
   update_release_draft:
@@ -15,10 +15,6 @@ jobs:
         with:
           # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
           # config-name: my-config.yml
-          config-namae: workflows/release-drafter.yml
+          config-name: release-drafter-config.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-template: |
-  ## What’s Changed
-
-  $CHANGES
